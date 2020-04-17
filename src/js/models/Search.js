@@ -7,8 +7,6 @@ export default class Search {
     }
 
     async getResults() {
-        // const proxy = 'https://cors-anywhere.herokuapp.com/';
-        // const key = '462b1cc8d4f2730081462fbc65136320';
 
         try {
             const res = await axios(`https://forkify-api.herokuapp.com/api/search?&q=${this.query}`);
